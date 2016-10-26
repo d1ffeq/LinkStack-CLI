@@ -42,7 +42,7 @@ class LinkStack:
         self.print_links()
         try: 
             num = int(raw_input('\nEnter line number of link to remove: '))
-            if (num - 1) <= self.stack_size:
+            if (num - 1) < self.stack_size:
                 self.stack.pop(num - 1)
                 self.stack_size = len(self.stack)
                 self.write_stack(self.stack)
